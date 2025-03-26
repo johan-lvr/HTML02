@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=jlvr@html02demo.se" method="post">
+        <label for="name">Ditt namn:</label>
+        <input type="text" name="name" id="name" placeholder="Ange ditt namn"><br>
+
+        <label for="expectations">Dina förväntningar på konferensen?</label><br>
+        <textarea name="expectations" id="expectations" rows="5" cols="80"></textarea><br>
+
+        <p style="margin-bottom: 0;">Välj maträtt</p>
+        <input type="radio" name="food" id="meat" value="meat">
+        <label for="meat">Kött</label><br>
+        <input type="radio" name="food" id="fish" value="fish">
+        <label for="fish">Fisk</label><br>
+        <input type="radio" name="food" id="veg" value="veg">
+        <label for="veg">Vegetarisk</label><br>
+
+        <br>
+        <input type="checkbox" name="newsletter" id="newsletter" value="ja">
+        <input type="hidden" name="newsletter" value="nej">
+        <label for="newsletter">Jag vill ha nyhetsbrev</label><br>
+
+        <br>
+        <input type="date" name="registeringsdag" id="date"><br>
+
+        <br>
+        <input type="number" name="antal" id="antal" min="1" max="10" step="1" value="1"><br>
+
+        <br>
+        <input type="color" name="color" id="color"><br>
+
+        <br>
+        <input type="email" name="email" id="email" placeholder="Ange din e-post"><br>
+
+        <br>
+        <input type="submit" value="Registrera dig">
+    </form>
+</body>
+</html>
